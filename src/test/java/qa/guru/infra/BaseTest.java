@@ -13,12 +13,18 @@ public abstract class BaseTest {
     static void setup() {
         TimeZone.setDefault(TimeZone.getTimeZone("Europe/Moscow"));
 
-        // Узнать размер экрана и установить
-        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        Configuration.browserSize = screenSize.width + "x" + screenSize.height;
+        // Для CI/CD требуется headless режим
+        boolean isCi = "true".equals(System.getenv("GITHUB_ACTIONS")) || System.getProperty("ci") != null;
+        Configuration.headless = isCi;
+
+        if (!isCi) {
+            Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+            Configuration.browserSize = screenSize.width + "x" + screenSize.height;
+        } else {
+            Configuration.browserSize = "1920x1080";
+        }
 
         Configuration.pageLoadStrategy = "eager";
-        Configuration.holdBrowserOpen = true;
 
         SelenideLogger.addListener("allure", new AllureSelenide());
     }

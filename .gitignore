@@ -4,6 +4,9 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 .kotlin
+build/allure-results/
+build/reports/allure-report/
+allure-history/
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
