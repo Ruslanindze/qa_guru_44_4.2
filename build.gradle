@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+    id 'io.qameta.allure' version '4.3.0'
+}
+
+group = 'qa.guru'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+def allureVersion = "2.32.0"
+
+allure {
+    version.set(allureVersion)
+    adapter {
+        allureJavaVersion.set(allureVersion)
+        aspectjWeaver.set(true)
+    }
+}
+
+dependencies {
+    testCompileOnly("org.projectlombok:lombok:1.18.48")
+    testAnnotationProcessor("org.projectlombok:lombok:1.18.48")
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:6.1.3'
+    testImplementation 'com.codeborne:selenide:7.19.1'
+    testImplementation 'io.qameta.allure:allure-selenide:2.32.0'
+}
+
+test {
+    useJUnitPlatform()
+    ignoreFailures = true
+
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
+    }
+}
