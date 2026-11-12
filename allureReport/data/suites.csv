@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","0","LambdaStepsTest","","Thu Nov 12 15:11:52 UTC 2026","broken","Thu Nov 12 15:11:52 UTC 2026","","qa.guru.tests.LambdaStepsTest","qa.guru.tests.LambdaStepsTest",""
-"","2392","Поиск Issue репозитория - ui steps","","Thu Nov 12 15:11:52 UTC 2026","broken","Thu Nov 12 15:11:55 UTC 2026","","qa.guru.tests.StepsTest","qa.guru.tests.StepsTest","shouldFindIssueByName"
-"","1","CleanSelenideTest","","Thu Nov 12 15:11:52 UTC 2026","broken","Thu Nov 12 15:11:52 UTC 2026","","qa.guru.tests.CleanSelenideTest","qa.guru.tests.CleanSelenideTest",""
+"","4639","Поиск Issue репозитория - lambda steps","","Thu Nov 12 15:26:36 UTC 2026","passed","Thu Nov 12 15:26:41 UTC 2026","","qa.guru.tests.LambdaStepsTest","qa.guru.tests.LambdaStepsTest","shouldFindIssueByName"
+"","3761","Поиск Issue репозитория - ui steps","","Thu Nov 12 15:26:41 UTC 2026","passed","Thu Nov 12 15:26:45 UTC 2026","","qa.guru.tests.StepsTest","qa.guru.tests.StepsTest","shouldFindIssueByName"
+"","31842","Поиск Issue репозитория - selenide","","Thu Nov 12 15:26:04 UTC 2026","passed","Thu Nov 12 15:26:36 UTC 2026","","qa.guru.tests.CleanSelenideTest","qa.guru.tests.CleanSelenideTest","shouldFindIssueByName"
