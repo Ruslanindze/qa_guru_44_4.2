@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","9632","Поиск Issue репозитория - selenide","","2026-11-13","passed","2026-11-13","","qa.guru.tests.CleanSelenideTest","qa.guru.tests.CleanSelenideTest","shouldFindIssueByName"
+"","6554","Поиск Issue репозитория - lambda steps","","2026-11-13","passed","2026-11-13","","qa.guru.tests.LambdaStepsTest","qa.guru.tests.LambdaStepsTest","shouldFindIssueByName"
+"","5166","Поиск Issue репозитория - ui steps","","2026-11-13","passed","2026-11-13","","qa.guru.tests.StepsTest","qa.guru.tests.StepsTest","shouldFindIssueByName"
