@@ -6,6 +6,8 @@ jobs:
   test:
     # где заускаем
     runs-on: ubuntu-latest
+    env:
+      DOCKER_API_VERSION: "1.45"
     # что делаем
     steps:
       # выкачиваем репозиторий
